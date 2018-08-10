@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122992566-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122992566-1');
+  </script>
+
+  <title>SourceView Reader</title>
+  <link rel="stylesheet" type="text/css" href="/styles/tableOfContents.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+
+</head>
+
+<body>
+  
+  <div>
+        <img src={SVLogo} className={styles.icons} alt={'SourceView Logo'}/>
+        <div className={styles.reader}>
+            <p className={styles.svtitle}>SourceView</p><p className={styles.readertitle}>READER</p>
+        </div>
+        <div className={styles.changeLanguage}>
+            <OutboundLink href={'https://sourceviewbible.github.io/index.html'}>
+                <p className={styles.switchlang}><span className={styles.switch}>&#x2261;</span>Change Language</p>
+                <p className={styles.switchlang}><span className={styles.switch}></span>cAnj laNgwij</p>
+            </OutboundLink>
+        </div>
+        <details>
+            <summary>{data.Matthew.edges.slice(0,1).map( post => (<span className={styles.bookTitle} key={post.node.id}>{post.node.bookName}</span>))}</summary>
+                <ul>
+                    {data.Matthew.edges.map(post => (
+                        <li key={post.node.id}><Link to={post.node.path} className={styles.link}>
+                            <p className={styles.title}>{post.node.title}</p>
+                            <p className={styles.reference}>{post.node.bookName} {post.node.ref}</p>
+                            <hr /></Link>
+                        </li>
+                    ))}
+                </ul>
+        </details>
+        <details>
+            <summary>{data.Mark.edges.slice(0,1).map( post => (<span className={styles.bookTitle} key={post.node.id}>{post.node.bookName}</span>))}</summary>
+                <ul>
+                    {data.Mark.edges.map(post => (
+                        <li key={post.node.id}><Link to={post.node.path} className={styles.link}>
+                            <p className={styles.title}>{post.node.title}</p>
+                            <p className={styles.reference}>{post.node.bookName} {post.node.ref}</p>
+                            <hr /></Link>
+                        </li>
+                    ))}
+                </ul>
+        </details>
+        <details>
+            <summary>{data.Luke.edges.slice(0,1).map( post => (<span className={styles.bookTitle} key={post.node.id}>{post.node.bookName}</span>))}</summary>
+                <ul>
+                    {data.Luke.edges.map(post => (
+                        <li key={post.node.id}><Link to={post.node.path} className={styles.link}>
+                            <p className={styles.title}>{post.node.title}</p>
+                            <p className={styles.reference}>{post.node.bookName} {post.node.ref}</p>
+                            <hr /></Link>
+                        </li>
+                    ))}
+                </ul>
+        </details>
+        <details>
+            <summary>{data.John.edges.slice(0,1).map( post => (<span className={styles.bookTitle} key={post.node.id}>{post.node.bookName}</span>))}</summary>
+                <ul>
+                    {data.John.edges.map(post => (
+                        <li key={post.node.id}><Link to={post.node.path} className={styles.link}>
+                            <p className={styles.title}>{post.node.title}</p>
+                            <p className={styles.reference}>{post.node.bookName} {post.node.ref}</p>
+                            <hr /></Link>
+                        </li>
+                    ))}
+                </ul>
+        </details>
+        <details>
+            <summary>{data.Acts.edges.slice(0,1).map( post => (<span className={styles.bookTitle} key={post.node.id}>{post.node.bookName}</span>))}</summary>
+                <ul>
+                    {data.Acts.edges.map(post => (
+                        <li key={post.node.id}><Link to={post.node.path} className={styles.link}>
+                            <p className={styles.title}>{post.node.title}</p>
+                            <p className={styles.reference}>{post.node.bookName} {post.node.ref}</p>
+                            <hr /></Link>
+                        </li>
+                    ))}
+                </ul>
+        </details>
+        <details>
+            <summary>{data.Romans.edges.slice(0,1).map( post => (<span className={styles.bookTitle} key={post.node.id}>{post.node.bookName}</span>))}</summary>
+                <ul>
+                    {data.Romans.edges.map(post => (
+                        <li key={post.node.id}><Link to={post.node.path} className={styles.link}>
+                            <p className={styles.title}>{post.node.title}</p>
+                            <p className={styles.reference}>{post.node.bookName} {post.node.ref}</p>
+                            <hr /></Link>
+                        </li>
+                    ))}
+                </ul>
+        </details>
+        <details>
+            <summary>{data.Corinthians1.edges.slice(0,1).map( post => (<span className={styles.bookTitle} key={post.node.id}>{post.node.bookName}</span>))}</summary>
+                <ul>
+                    {data.Corinthians1.edges.map(post => (
+                        <li key={post.node.id}><Link to={post.node.path} className={styles.link}>
+                            <p className={styles.title}>{post.node.title}</p>
+                            <p className={styles.reference}>{post.node.bookName} {post.node.ref}</p>
+                            <hr /></Link>
+                        </li>
+                    ))}
+                </ul>
+        </details>
+        <details>
+            <summary>{data.Corinthians2.edges.slice(0,1).map( post => (<span className={styles.bookTitle} key={post.node.id}>{post.node.bookName}</span>))}</summary>
+                <ul>
+                    {data.Corinthians2.edges.map(post => (
+                        <li key={post.node.id}><Link to={post.node.path} className={styles.link}>
+                            <p className={styles.title}>{post.node.title}</p>
+                            <p className={styles.reference}>{post.node.bookName} {post.node.ref}</p>
+                            <hr /></Link>
+                        </li>
+                    ))}
+                </ul>
+        </details>
+        <details>
+            <summary>{data.Galatians.edges.slice(0,1).map( post => (<span className={styles.bookTitle} key={post.node.id}>{post.node.bookName}</span>))}</summary>
+                <ul>
+                    {data.Galatians.edges.map(post => (
+                        <li key={post.node.id}><Link to={post.node.path} className={styles.link}>
+                            <p className={styles.title}>{post.node.title}</p>
+                            <p className={styles.reference}>{post.node.bookName} {post.node.ref}</p>
+                            <hr /></Link>
+                        </li>
+                    ))}
+                </ul>
+        </details>
+        <details>
+            <summary>{data.Ephesians.edges.slice(0,1).map( post => (<span className={styles.bookTitle} key={post.node.id}>{post.node.bookName}</span>))}</summary>
+                <ul>
+                    {data.Ephesians.edges.map(post => (
+                        <li key={post.node.id}><Link to={post.node.path} className={styles.link}>
+                            <p className={styles.title}>{post.node.title}</p>
+                            <p className={styles.reference}>{post.node.bookName} {post.node.ref}</p>
+                            <hr /></Link>
+                        </li>
+                    ))}
+                </ul>
+        </details>
+        <details>
+            <summary>{data.Philippians.edges.slice(0,1).map( post => (<span className={styles.bookTitle} key={post.node.id}>{post.node.bookName}</span>))}</summary>
+                <ul>
+                    {data.Philippians.edges.map(post => (
+                        <li key={post.node.id}><Link to={post.node.path} className={styles.link}>
+                            <p className={styles.title}>{post.node.title}</p>
+                            <p className={styles.reference}>{post.node.bookName} {post.node.ref}</p>
+                            <hr /></Link>
+                        </li>
+                    ))}
+                </ul>
+        </details>
+        <details>
+            <summary>{data.Colossians.edges.slice(0,1).map( post => (<span className={styles.bookTitle} key={post.node.id}>{post.node.bookName}</span>))}</summary>
+                <ul>
+                    {data.Colossians.edges.map(post => (
+                        <li key={post.node.id}><Link to={post.node.path} className={styles.link}>
+                            <p className={styles.title}>{post.node.title}</p>
+                            <p className={styles.reference}>{post.node.bookName} {post.node.ref}</p>
+                            <hr /></Link>
+                        </li>
+                    ))}
+                </ul>
+        </details>
+        <details>
+            <summary>{data.Thessalonians1.edges.slice(0,1).map( post => (<span className={styles.bookTitle} key={post.node.id}>{post.node.bookName}</span>))}</summary>
+                <ul>
+                    {data.Thessalonians1.edges.map(post => (
+                        <li key={post.node.id}><Link to={post.node.path} className={styles.link}>
+                            <p className={styles.title}>{post.node.title}</p>
+                            <p className={styles.reference}>{post.node.bookName} {post.node.ref}</p>
+                            <hr /></Link>
+                        </li>
+                    ))}
+                </ul>
+        </details>
+        <details>
+            <summary>{data.Thessalonians2.edges.slice(0,1).map( post => (<span className={styles.bookTitle} key={post.node.id}>{post.node.bookName}</span>))}</summary>
+                <ul>
+                    {data.Thessalonians2.edges.map(post => (
+                        <li key={post.node.id}><Link to={post.node.path} className={styles.link}>
+                            <p className={styles.title}>{post.node.title}</p>
+                            <p className={styles.reference}>{post.node.bookName} {post.node.ref}</p>
+                            <hr /></Link>
+                        </li>
+                    ))}
+                </ul>
+        </details>
+        <details>
+            <summary>{data.Timothy1.edges.slice(0,1).map( post => (<span className={styles.bookTitle} key={post.node.id}>{post.node.bookName}</span>))}</summary>
+                <ul>
+                    {data.Timothy1.edges.map(post => (
+                        <li key={post.node.id}><Link to={post.node.path} className={styles.link}>
+                            <p className={styles.title}>{post.node.title}</p>
+                            <p className={styles.reference}>{post.node.bookName} {post.node.ref}</p>
+                            <hr /></Link>
+                        </li>
+                    ))}
+                </ul>
+        </details>
+        <details>
+            <summary>{data.Timothy2.edges.slice(0,1).map( post => (<span className={styles.bookTitle} key={post.node.id}>{post.node.bookName}</span>))}</summary>
+                <ul>
+                    {data.Timothy2.edges.map(post => (
+                        <li key={post.node.id}><Link to={post.node.path} className={styles.link}>
+                            <p className={styles.title}>{post.node.title}</p>
+                            <p className={styles.reference}>{post.node.bookName} {post.node.ref}</p>
+                            <hr /></Link>
+                        </li>
+                    ))}
+                </ul>
+        </details>
+        <details>
+            <summary>{data.Titus.edges.slice(0,1).map( post => (<span className={styles.bookTitle} key={post.node.id}>{post.node.bookName}</span>))}</summary>
+                <ul>
+                    {data.Titus.edges.map(post => (
+                        <li key={post.node.id}><Link to={post.node.path} className={styles.link}>
+                            <p className={styles.title}>{post.node.title}</p>
+                            <p className={styles.reference}>{post.node.bookName} {post.node.ref}</p>
+                            <hr /></Link>
+                        </li>
+                    ))}
+                </ul>
+        </details>
+        <details>
+            <summary>{data.Philemon.edges.slice(0,1).map( post => (<span className={styles.bookTitle} key={post.node.id}>{post.node.bookName}</span>))}</summary>
+                <ul>
+                    {data.Philemon.edges.map(post => (
+                        <li key={post.node.id}><Link to={post.node.path} className={styles.link}>
+                            <p className={styles.title}>{post.node.title}</p>
+                            <p className={styles.reference}>{post.node.bookName} {post.node.ref}</p>
+                            <hr /></Link>
+                        </li>
+                    ))}
+                </ul>
+        </details>
+        <details>
+            <summary>{data.Hebrews.edges.slice(0,1).map( post => (<span className={styles.bookTitle} key={post.node.id}>{post.node.bookName}</span>))}</summary>
+                <ul>
+                    {data.Hebrews.edges.map(post => (
+                        <li key={post.node.id}><Link to={post.node.path} className={styles.link}>
+                            <p className={styles.title}>{post.node.title}</p>
+                            <p className={styles.reference}>{post.node.bookName} {post.node.ref}</p>
+                            <hr /></Link>
+                        </li>
+                    ))}
+                </ul>
+        </details>
+        <details>
+            <summary>{data.James.edges.slice(0,1).map( post => (<span className={styles.bookTitle} key={post.node.id}>{post.node.bookName}</span>))}</summary>
+                <ul>
+                    {data.James.edges.map(post => (
+                        <li key={post.node.id}><Link to={post.node.path} className={styles.link}>
+                            <p className={styles.title}>{post.node.title}</p>
+                            <p className={styles.reference}>{post.node.bookName} {post.node.ref}</p>
+                            <hr /></Link>
+                        </li>
+                    ))}
+                </ul>
+        </details>
+        <details>
+            <summary>{data.Peter1.edges.slice(0,1).map( post => (<span className={styles.bookTitle} key={post.node.id}>{post.node.bookName}</span>))}</summary>
+                <ul>
+                    {data.Peter1.edges.map(post => (
+                        <li key={post.node.id}><Link to={post.node.path} className={styles.link}>
+                            <p className={styles.title}>{post.node.title}</p>
+                            <p className={styles.reference}>{post.node.bookName} {post.node.ref}</p>
+                            <hr /></Link>
+                        </li>
+                    ))}
+                </ul>
+        </details>
+        <details>
+            <summary>{data.Peter2.edges.slice(0,1).map( post => (<span className={styles.bookTitle} key={post.node.id}>{post.node.bookName}</span>))}</summary>
+                <ul>
+                    {data.Peter2.edges.map(post => (
+                        <li key={post.node.id}><Link to={post.node.path} className={styles.link}>
+                            <p className={styles.title}>{post.node.title}</p>
+                            <p className={styles.reference}>{post.node.bookName} {post.node.ref}</p>
+                            <hr /></Link>
+                        </li>
+                    ))}
+                </ul>
+        </details>
+        <details>
+            <summary>{data.John1.edges.slice(0,1).map( post => (<span className={styles.bookTitle} key={post.node.id}>{post.node.bookName}</span>))}</summary>
+                <ul>
+                    {data.John1.edges.map(post => (
+                        <li key={post.node.id}><Link to={post.node.path} className={styles.link}>
+                            <p className={styles.title}>{post.node.title}</p>
+                            <p className={styles.reference}>{post.node.bookName} {post.node.ref}</p>
+                            <hr /></Link>
+                        </li>
+                    ))}
+                </ul>
+        </details>
+        <details>
+            <summary>{data.John2.edges.slice(0,1).map( post => (<span className={styles.bookTitle} key={post.node.id}>{post.node.bookName}</span>))}</summary>
+                <ul>
+                    {data.John2.edges.map(post => (
+                        <li key={post.node.id}><Link to={post.node.path} className={styles.link}>
+                            <p className={styles.title}>{post.node.title}</p>
+                            <p className={styles.reference}>{post.node.bookName} {post.node.ref}</p>
+                            <hr /></Link>
+                        </li>
+                    ))}
+                </ul>
+        </details>
+        <details>
+            <summary>{data.John3.edges.slice(0,1).map( post => (<span className={styles.bookTitle} key={post.node.id}>{post.node.bookName}</span>))}</summary>
+                <ul>
+                    {data.John3.edges.map(post => (
+                        <li key={post.node.id}><Link to={post.node.path} className={styles.link}>
+                            <p className={styles.title}>{post.node.title}</p>
+                            <p className={styles.reference}>{post.node.bookName} {post.node.ref}</p>
+                            <hr /></Link>
+                        </li>
+                    ))}
+                </ul>
+        </details>
+        <details>
+            <summary>{data.Jude.edges.slice(0,1).map( post => (<span className={styles.bookTitle} key={post.node.id}>{post.node.bookName}</span>))}</summary>
+                <ul>
+                    {data.Jude.edges.map(post => (
+                        <li key={post.node.id}><Link to={post.node.path} className={styles.link}>
+                            <p className={styles.title}>{post.node.title}</p>
+                            <p className={styles.reference}>{post.node.bookName} {post.node.ref}</p>
+                            <hr /></Link>
+                        </li>
+                    ))}
+                </ul>
+        </details>
+        <details>
+            <summary>{data.Revelation.edges.slice(0,1).map( post => (<span className={styles.bookTitle} key={post.node.id}>{post.node.bookName}</span>))}</summary>
+                <ul>
+                    {data.Revelation.edges.map(post => (
+                        <li key={post.node.id}><Link to={post.node.path} className={styles.link}>
+                            <p className={styles.title}>{post.node.title}</p>
+                            <p className={styles.reference}>{post.node.bookName} {post.node.ref}</p>
+                            <hr /></Link>
+                        </li>
+                    ))}
+                </ul>
+        </details>
+        <h5 className={styles.copyrightIndex}>พระคัมภีร์ ฉบับแปลใหม่ (NTV) ฉบับ 2016<br />สงวนลิขสิทธิ์ © 1998, 2012<br />โดย หน่วยงานพระคัมภีร์ฉบับแปลใหม่<br /><br />© 2018 SourceView LLC.</h5>
+        <h5 className={styles.copyrightIndex}>World English Bible (WEB)<br />a Public Domain Modern English translation<br />of the Holy Bible.<br /><br />© 2018 SourceView LLC.</h5>
+        <h5 className={styles.copyrightIndex}>La Santa Biblia, Nueva Traducción Viviente,<br />© Tyndale House Foundation, 2010.<br />Todos los derechos reservados.<br /><br />© 2018 SourceView LLC.</h5>
+        <h5 className={styles.copyrightIndex}>Kurt Aland et al., Novum Testamentum Graece<br />(28th Edition.; Stuttgart: Deutsche Bibelgesellschaft, 2012)<br /><br />© 2018 SourceView LLC.</h5>
+        <h5 className={styles.copyrightIndex}>Biblia Hebraica Stuttgartensia:<br />With Westminster Hebrew Morphology.<br />(electronic ed.; Stuttgart; Glenside PA:<br />German Bible Society;<br />Westminster Seminary, 1996)<br /><br />© 2018 SourceView LLC.</h5>
+        <h5 className={styles.copyrightIndex}>Nova Tradução na Linguagem de Hoje<br />Copyright 2000 Sociedade Bíblica do Brasil.<br />Todos os direitos reservados<br /><br />© 2018 SourceView LLC.</h5>
+        <h5 className={styles.copyrightIndex}>The Holy Bible:<br />Korean Revised Version KRV 개역한글<br /><br />© 2018 SourceView LLC.</h5>
+    </div>
+
+</body>
